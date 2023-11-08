@@ -156,6 +156,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@2.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.factory@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.factory@1.0-service \
@@ -206,6 +207,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/sony/sm8550-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/sony/sm8550-common/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
@@ -411,6 +413,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
@@ -925,6 +928,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/bix.fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bix.fingerprint.default.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
@@ -1414,6 +1418,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth.audio-V1-ndk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
@@ -1583,6 +1588,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
+    PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
     WfdService \
@@ -1642,6 +1648,7 @@ PRODUCT_PACKAGES += \
     qtiradio-saidl \
     vendor.egistec.hardware.fingerprint \
     vendor.qti.gnss-service \
+    vendor.qti.hardware.alarm \
     vendor.qti.hardware.limits-service \
     vendor.qti.hardware.perf \
     vendor.qti.hardware.power.powermodule \
