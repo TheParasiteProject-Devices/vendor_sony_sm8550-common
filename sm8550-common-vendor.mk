@@ -1221,7 +1221,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk2_0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk_manager.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
