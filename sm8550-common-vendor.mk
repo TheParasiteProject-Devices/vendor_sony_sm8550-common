@@ -1729,13 +1729,11 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
-    QtiTelephony \
     QtiTelephonyService \
     atfwd \
     uceShimService \
     WfdService \
     dpmserviceapp \
-    ims \
     qcrilmsgtunnel \
     tcmclient \
     vendor.qti.hardware.data.connectionaidl-V1-java \
