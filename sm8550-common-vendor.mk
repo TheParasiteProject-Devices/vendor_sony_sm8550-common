@@ -1555,6 +1555,7 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
+    EuiccGoogle \
     EuiccMemoryReset \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
