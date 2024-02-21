@@ -693,7 +693,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio-impl-qti.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib/hw/audio.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.kalama.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
@@ -727,10 +726,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libdevice_security_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdevice_security_vendor.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfmpal.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp_pal.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidd.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkcl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkernelmanager.so \
@@ -922,7 +919,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-aidl-impl-qti.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/audio.primary.kalama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.kalama.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/bix.fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bix.fingerprint.default.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
@@ -1057,7 +1053,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libeva_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva_util.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmpal.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
@@ -1072,8 +1067,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/libhidparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidparser.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidd.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libifaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifaa.so \
