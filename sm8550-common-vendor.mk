@@ -1569,6 +1569,7 @@ PRODUCT_PACKAGES += \
     EuiccMemoryReset \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    ImsRcsService \
     PowerOffAlarm \
     QCC \
     QtiTelephonyService \
