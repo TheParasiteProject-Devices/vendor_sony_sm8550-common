@@ -1573,9 +1573,11 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
+    QtiTelephony \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     tcmclient \
     WfdCommon \
