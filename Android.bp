@@ -508,13 +508,6 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
-	owner: "sony",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.ims.connection-V1.0-java",
 	owner: "sony",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
@@ -539,13 +532,6 @@ dex_import {
 	name: "vendor.qti.ims.factory-V2.2-java",
 	owner: "sony",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.ims.factoryaidlservice-V1-java",
-	owner: "sony",
-	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
