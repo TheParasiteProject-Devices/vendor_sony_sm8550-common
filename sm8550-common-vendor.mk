@@ -185,10 +185,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.semc.hardware.display@2.5-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.hardware.display@2.5-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.semc.hardware.extlight-service.somc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.hardware.extlight-service.somc \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.semc.hardware.secd@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.hardware.secd@1.1-service \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.semc.system.idd@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.system.idd@1.1-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.somc.hardware.aidlmiscta-service.somc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.somc.hardware.aidlmiscta-service.somc \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.somc.hardware.miscta@1.0-service \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/iddd:$(TARGET_COPY_OUT_VENDOR)/bin/iddd \
     vendor/sony/sm8550-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/sony/sm8550-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
     vendor/sony/sm8550-common/proprietary/vendor/bin/init.qcom.class_core.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.class_core.sh \
@@ -360,8 +358,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/sony/sm8550-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/idd.fstab:$(TARGET_COPY_OUT_VENDOR)/etc/idd.fstab \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/iddd_user.conf:$(TARGET_COPY_OUT_VENDOR)/etc/iddd_user.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
@@ -382,7 +378,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.sony.idd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sony.idd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.taqmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.taqmi.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
@@ -433,7 +428,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.display@2.5-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.extlight-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.extlight-somc.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.secd@1.1-service.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.system.idd@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.system.idd@1.1-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.somc.hardware.aidlmiscta-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.somc.hardware.aidlmiscta-somc.rc \
@@ -503,8 +497,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/security/idd_config.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_config.pem \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/security/idd_report.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_report.pem \
     vendor/sony/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0_somc_platform.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0_somc_platform.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/sensors/config/kailua_ak991x_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_ak991x_0_somc_product.json \
@@ -692,7 +684,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp_pal.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidd.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkcl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkernelmanager.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
@@ -843,7 +834,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qconfig@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.soter@1.0.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.semc.system.idd@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/vendor.somc.hardware.security.secd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.security.secd@1.1.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
@@ -1015,7 +1005,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidd.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libifaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifaa.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libintegration.so \
@@ -1450,8 +1439,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V3-ndk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.fingerprint-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.fingerprint-V1-ndk_platform.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.thermal@1.0.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.system.idd@1.0.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.system.idd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.system.idd@1.1.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.aidlmiscta-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.aidlmiscta-V1-ndk_platform.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.aidlradio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.aidlradio-V1-ndk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.miscta@1.0.so \
