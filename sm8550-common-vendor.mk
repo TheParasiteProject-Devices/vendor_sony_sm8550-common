@@ -595,7 +595,7 @@ PRODUCT_PACKAGES += \
     libeva_util \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfmpal \
+    libfmpal_vendor \
     libgame_enhance \
     libgarden \
     libgarden_haltests_e2e \
@@ -608,7 +608,7 @@ PRODUCT_PACKAGES += \
     libhdcpsrm \
     libhdr_backlight_adapter \
     libhdr_tm \
-    libhfp_pal \
+    libhfp_pal_vendor \
     libidl \
     libifaa \
     libintegration \

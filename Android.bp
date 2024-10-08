@@ -3215,7 +3215,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libfmpal",
+	name: "libfmpal_vendor",
+	stem: "libfmpal",
 	owner: "sony",
 	strip: {
 		none: true,
@@ -3436,7 +3437,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libhfp_pal",
+	name: "libhfp_pal_vendor",
+	stem: "libhfp_pal",
 	owner: "sony",
 	strip: {
 		none: true,
