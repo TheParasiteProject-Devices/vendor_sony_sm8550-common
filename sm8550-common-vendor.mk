@@ -148,7 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
@@ -183,9 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -267,10 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -417,41 +409,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vulkan.adreno \
-    libCB \
-    libOpenCL \
-    libadreno_app_profiles \
-    libadreno_utils \
-    libcdsp_default_listener \
-    libcdsprpc \
-    libdevice_security_vendor \
-    libgpudataproducer \
-    libgsl \
-    libkcl \
-    libkernelmanager \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
-    libmdsprpc \
-    libmiscta \
-    libqrtr \
-    libsdsprpc \
-    libsysmon_cdsp_skel \
-    libta \
-    libtime_genoff \
-    libvmmem \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.soter@1.0 \
-    vendor.qti.qspmhal@1.0 \
-    vendor.somc.hardware.security.secd@1.1 \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
@@ -464,6 +421,13 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
@@ -479,10 +443,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.bttpi-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vulkan.adreno \
     jcos_nq_client \
     lib-imscommon \
     lib-imsdpl \
@@ -497,11 +463,8 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libAlacSwDec \
     libApeSwDec \
+    libCB \
     libCOSNet_spatial_qnn_quantized \
-    libDcfHalBleProto \
-    libDcfHalFramework \
-    libDcfHalLogger \
-    libDcfHalQtiMutex \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -511,6 +474,7 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libMiscTaWrapper \
+    libOpenCL \
     libPeripheralStateUtils \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -522,7 +486,6 @@ PRODUCT_PACKAGES += \
     libQnnSystem \
     libQtiRilLoadable \
     libRbsFlow \
-    libSensorsInterface \
     libSnpeHtpV73Stub \
     libSonyDisplayProperties \
     libTouchInputVM \
@@ -537,6 +500,8 @@ PRODUCT_PACKAGES += \
     lib_bt_ble \
     lib_bt_bundle \
     libadm \
+    libadreno_app_profiles \
+    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libagm \
@@ -560,6 +525,8 @@ PRODUCT_PACKAGES += \
     libcapiv2uvvendor \
     libcdfw \
     libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libclstc_hdr \
@@ -572,6 +539,7 @@ PRODUCT_PACKAGES += \
     libcpion \
     libcv_common \
     libdataitems \
+    libdevice_security_vendor \
     libdiag \
     libdigital-dimming \
     libdisp-aba \
@@ -604,6 +572,8 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
+    libgpudataproducer \
+    libgsl \
     libhdcpsrm \
     libhdr_backlight_adapter \
     libhdr_tm \
@@ -614,12 +584,17 @@ PRODUCT_PACKAGES += \
     libizat_client_api \
     libizat_core \
     libjnihelper \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
     liblights-core \
     liblistensoundmodel2vendor \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     liblmthermallistner \
     libloadalgo_stub \
     libloc_api_v02 \
@@ -644,9 +619,11 @@ PRODUCT_PACKAGES += \
     libmasc \
     libmcs \
     libmdmdetect \
+    libmdsprpc \
     libmemutils \
     libminkdescriptor \
     libminksocket_vendor \
+    libmiscta \
     libmm-hdcpmgr \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
@@ -672,7 +649,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpfter \
     libprotobuf-c-idd \
-    libqape_oem_ext \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -741,6 +717,7 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqms_client \
     libqnnengine \
+    libqrtr \
     libqrtrclient \
     libqseed3 \
     libqsocket \
@@ -767,6 +744,7 @@ PRODUCT_PACKAGES += \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
     libsdmextension \
+    libsdsprpc \
     libsecureui_svcsock \
     libsensorcal \
     libsensorslog \
@@ -793,16 +771,20 @@ PRODUCT_PACKAGES += \
     libsynergy_loc_api \
     libsys-utils \
     libsys_info_cache \
+    libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libta \
     libtestutils \
     libthermal_engine \
     libthermalclient \
+    libtime_genoff \
     libtinyxml2_1 \
     libtpm \
     libtrustedapploader \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
+    libvmmem \
     libvppclient \
     libvppcommon \
     libvpphcp \
@@ -926,6 +908,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0_vendor \
     vendor.qti.hardware.dpmservice@1.0_vendor \
     vendor.qti.hardware.dpmservice@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
     vendor.qti.hardware.factory@1.0 \
@@ -986,6 +969,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.trustedui@1.0 \
     vendor.qti.hardware.trustedui@1.1 \
     vendor.qti.hardware.trustedui@1.2 \
@@ -1029,6 +1013,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.3 \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qspmhal@1.0-impl \
+    vendor.qti.qspmhal@1.0 \
     vendor.semc.hardware.fingerprint-V1-ndk_platform \
     vendor.semc.hardware.thermal@1.0 \
     vendor.somc.hardware.aidlmiscta-V1-ndk_platform \
@@ -1036,6 +1021,7 @@ PRODUCT_PACKAGES += \
     vendor.somc.hardware.miscta@1.0 \
     vendor.somc.hardware.nfc@1.0 \
     vendor.somc.hardware.radio@1.0 \
+    vendor.somc.hardware.security.secd@1.1 \
     vendor.somc.hardware.videoeffect-V1-ndk_platform \
     libQnnHtpV73Skel.cameraqnn \
     bm3a68v08s11n29 \
@@ -1119,18 +1105,13 @@ PRODUCT_PACKAGES += \
     libvpt_action_recognition \
     libworker_pool \
     com.qualcomm.qti.ant@1.0 \
-    fm_helium \
-    libfm-hci \
-    libmmosal \
-    libmmparser_lite \
-    vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.fm@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
     com.quicinc.cne.constants@1.0 \
     com.quicinc.cne.constants@2.0 \
     com.quicinc.cne.constants@2.1 \
+    fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -1140,8 +1121,11 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
+    libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libqcc \
@@ -1166,6 +1150,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
     vendor.qti.hardware.data.cne.internal.server@1.0 \
@@ -1176,6 +1161,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
@@ -1185,8 +1171,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccvndhal_aidl-V1-ndk \
-    libQnnHtpV73 \
-    libQnnHtpV73Skel \
     libQnnHtp_odm \
     libQnnHtpV73Stub_odm \
     CACertService \
@@ -1344,11 +1328,6 @@ PRODUCT_PACKAGES += \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
-    qsap_dcfd \
-    qsap_location \
-    qsap_qapeservice \
-    qsap_sensors \
-    qsap_voiceui \
     qseecomd \
     qti \
     qtigetprop \
@@ -1385,9 +1364,6 @@ PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
     libimsmedia_jni_libimsmedia_jni_symlink64 \
     libwfdnative_libwfdnative_symlink64 \
-    libEGL_adreno_libEGL_adreno_symlink32 \
-    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
     libEGL_adreno_libEGL_adreno_symlink64 \
     libGLESv2_adreno_libq3dtools_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64
