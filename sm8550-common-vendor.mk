@@ -1365,5 +1365,5 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni_libimsmedia_jni_symlink64 \
     libwfdnative_libwfdnative_symlink64 \
     libEGL_adreno_libEGL_adreno_symlink64 \
-    libGLESv2_adreno_libq3dtools_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64
