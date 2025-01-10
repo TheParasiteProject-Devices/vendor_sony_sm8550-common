@@ -367,6 +367,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
+    vendor.qti.hardware.fm-V1-ndk \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
@@ -721,6 +723,7 @@ PRODUCT_PACKAGES += \
     libsnsutils \
     libsoc_helper \
     libsonydseehxwrapper \
+    libspc_vendor \
     libspcom \
     libspl \
     libssc \
@@ -969,9 +972,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
+    vendor.semc.hardware.aidlthermal-V2-ndk \
     vendor.semc.hardware.extlight-V1-ndk_platform \
     vendor.semc.hardware.fingerprint-V1-ndk_platform \
-    vendor.semc.hardware.thermal@1.0 \
+    vendor.semc.hardware.spc-V1-ndk_platform \
     vendor.somc.hardware.aidlmiscta-V1-ndk_platform \
     vendor.somc.hardware.aidlradio-V1-ndk \
     vendor.somc.hardware.miscta@1.0 \
@@ -1125,8 +1129,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     libQnnHtp_odm \
     libQnnHtpV73Stub_odm \
@@ -1141,8 +1147,8 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
-    QtiTelephony \
     QtiTelephonyService \
+    QtiTelephony \
     WfdService \
     dpmserviceapp \
     ims \
