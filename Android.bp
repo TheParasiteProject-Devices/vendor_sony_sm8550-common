@@ -13687,34 +13687,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.egistec.hardware.fingerprint@4.0",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.libdpmctmgr",
     owner: "sony",
     strip: {
@@ -18436,31 +18408,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.semc.hardware.aidlthermal-V2-ndk",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.semc.hardware.aidlthermal-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.semc.hardware.extlight-V1-ndk_platform",
     owner: "sony",
     strip: {
@@ -21704,7 +21651,7 @@ android_app_import {
     owner: "sony",
     apk: "proprietary/vendor/app/CneApp/CneApp.apk",
     required: [
-        "CneApp.libvndfwk_detect_jni.qti_symlink",
+        "CneApp.libvndfwk_detect_jni.qti_vendor_symlink",
     ],
     certificate: "platform",
     dex_preopt: {
@@ -22084,6 +22031,15 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.ims.connectionaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.factory-V2.0-java",
     owner: "sony",
     jars: [
@@ -22106,6 +22062,15 @@ dex_import {
     owner: "sony",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.factoryaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -22138,6 +22103,15 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.ims.rcssipaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.rcsuce-V1.0-java",
     owner: "sony",
     jars: [
@@ -22160,6 +22134,15 @@ dex_import {
     owner: "sony",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuceaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -23774,6 +23757,39 @@ cc_prebuilt_binary {
                 "vendor.qti.hardware.soter@1.0",
                 "libifaa",
                 "liboemcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.semc.hardware.spc-service",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.semc.hardware.spc-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "libmiscta",
+                "libcutils",
+                "vendor.semc.hardware.spc-V1-ndk_platform",
+                "libdevice_security_vendor",
                 "libc++",
                 "libc",
                 "libm",

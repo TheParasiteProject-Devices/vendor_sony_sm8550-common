@@ -201,6 +201,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.display@2.5-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.extlight-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.extlight-somc.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.secd@1.1-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.semc.hardware.spc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.spc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.somc.hardware.aidlmiscta-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.somc.hardware.aidlmiscta-somc.rc \
@@ -816,7 +817,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.6 \
     vendor.display.color@1.7 \
     vendor.display.postproc@1.0 \
-    vendor.egistec.hardware.fingerprint@4.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -972,7 +972,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
-    vendor.semc.hardware.aidlthermal-V2-ndk \
     vendor.semc.hardware.extlight-V1-ndk_platform \
     vendor.semc.hardware.fingerprint-V1-ndk_platform \
     vendor.semc.hardware.spc-V1-ndk_platform \
@@ -1175,15 +1174,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.iwlan-V1.0-java \
     vendor.qti.hardware.data.qmi-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
     vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.factoryaidlservice-V1-java \
     vendor.qti.ims.rcssip-V1.0-java \
     vendor.qti.ims.rcssip-V1.1-java \
     vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcssipaidlservice-V1-java \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
+    vendor.qti.ims.rcsuceaidlservice-V1-java \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
@@ -1253,6 +1256,7 @@ PRODUCT_PACKAGES += \
     vendor.semc.hardware.display@2.5-service \
     vendor.semc.hardware.extlight-service.somc \
     vendor.semc.hardware.secd@1.1-service \
+    vendor.semc.hardware.spc-service \
     vendor.somc.hardware.aidlmiscta-service.somc \
     vendor.somc.hardware.miscta@1.0-service \
     ims_rtp_daemon \
