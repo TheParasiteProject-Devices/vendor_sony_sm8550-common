@@ -1349,3 +1349,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so \
     system_ext_lib64_vendor_dolby_hardware_dms@2_0_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
