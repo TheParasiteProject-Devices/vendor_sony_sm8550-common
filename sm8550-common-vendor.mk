@@ -135,7 +135,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/sony/sm8550-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
@@ -398,7 +397,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     audio.primary.kalama \
-    bix.fingerprint.default \
+    fingerprint.default \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -987,7 +986,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     vendor.semc.hardware.extlight-V1-ndk_platform \
-    vendor.semc.hardware.fingerprint-V1-ndk_platform \
     vendor.semc.hardware.spc-V1-ndk_platform \
     vendor.somc.hardware.aidlmiscta-V1-ndk_platform \
     vendor.somc.hardware.aidlradio-V1-ndk \
@@ -1220,7 +1218,6 @@ PRODUCT_PACKAGES += \
     qms-saidl.xml \
     qtiradio-saidl.xml \
     vendor.dolby.hardware.dms.xml \
-    vendor.egistec.hardware.fingerprint.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.limits-service.xml \
@@ -1244,7 +1241,6 @@ PRODUCT_PACKAGES += \
     embmsslServer \
     engine-service \
     garden_app \
-    android.hardware.biometrics.fingerprint@2.1-service-rbs \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
