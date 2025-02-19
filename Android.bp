@@ -12837,43 +12837,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci.nqx.default.hw",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so",
-            ],
-            shared_libs: [
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "vendor.nxp.hardware.nfc@2.0",
-                "android.hardware.secure_element@1.0",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libhidlbase",
-                "liblog",
-                "libmiscta",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "qcrilInterfaces",
     owner: "sony",
     strip: {
@@ -14183,34 +14146,6 @@ cc_prebuilt_library_shared {
                 "com.qualcomm.qti.dpm.api@1.0_vendor",
                 "vendor.qti.hardware.dpmservice@1.0_vendor",
                 "vendor.qti.hardware.mwqemadapter@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.hardware.nfc@2.0",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.nxp.hardware.nfc@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -18877,34 +18812,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.somc.hardware.nfc@1.0",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.somc.hardware.nfc@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.somc.hardware.radio@1.0",
     owner: "sony",
     strip: {
@@ -23429,41 +23336,6 @@ cc_prebuilt_binary {
                 "libdlbdsservice",
                 "vendor.dolby.hardware.dms@2.0",
                 "vendor.dolby.hardware.dms@2.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.nxp.hardware.nfc@2.0-service",
-    owner: "sony",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service",
-            ],
-            shared_libs: [
-                "nfc_nci.nqx.default.hw",
-                "se_nq_extn_client",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "vendor.nxp.hardware.nfc@2.0",
-                "vendor.somc.hardware.nfc@1.0",
                 "libc++",
                 "libc",
                 "libm",
